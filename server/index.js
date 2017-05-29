@@ -6,7 +6,7 @@ var cors = require('cors');
 var app = express();
 app.use(cors())
 
-app.get('/data/chart1', function (req, res) {
+app.get('/data/chart3', function (req, res) {
 
   // TODO devolver random o procedentes de base de datos
 
@@ -101,6 +101,84 @@ app.get('/data/chart1', function (req, res) {
 
 });
 
+
+app.get('/data/chart4', function (req, res) {
+
+  // TODO devolver random o procedentes de base de datos
+
+  res.send([
+        {
+          key: "One",
+          y: 5
+        },
+        {
+          key: "Two",
+          y: 2
+        },
+        {
+          key: "Three",
+          y: 9
+        },
+        {
+          key: "Four",
+          y: 7
+        },
+        {
+          key: "Five",
+          y: 4
+        },
+        {
+          key: "Six",
+          y: 3
+        },
+        {
+          key: "Seven",
+          y: .5
+        }
+      ]
+  );
+
+});
+
+
+app.get('/data/chart5', function (req, res) {
+
+  // TODO devolver random o procedentes de base de datos
+
+  res.send([
+            {
+                key: "One",
+                y: 5
+            },
+            {
+                key: "Two",
+                y: 2
+            },
+            {
+                key: "Three",
+                y: 9
+            },
+            {
+                key: "Four",
+                y: 7
+            },
+            {
+                key: "Five",
+                y: 4
+            },
+            {
+                key: "Six",
+                y: 3
+            },
+            {
+                key: "Seven",
+                y: .5
+            }
+        ]
+  );
+
+});
+
 app.listen(7001, function () {
-  console.log('Example app listening on port 3001!');
+  console.log('Example app listening on port 7001!');
 });
